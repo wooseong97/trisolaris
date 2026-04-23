@@ -6,6 +6,45 @@ A real-time, interactive simulator for the gravitational three-body problem, bui
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey.svg)
 
+## Showcase
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="assets/figure8.gif" width="100%" alt="Figure-8 choreography"/><br/>
+      <sub><b>Figure-8</b> — Chenciner–Montgomery</sub>
+    </td>
+    <td align="center">
+      <img src="assets/lagrange.gif" width="100%" alt="Lagrange triangle"/><br/>
+      <sub><b>Lagrange Triangle</b> — equal-mass rotation</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="assets/butterfly.gif" width="100%" alt="Butterfly I"/><br/>
+      <sub><b>Butterfly I</b> — Šuvakov–Dmitrašinović</sub>
+    </td>
+    <td align="center">
+      <img src="assets/hierarchical_moon.gif" width="100%" alt="Hierarchical triple with moon"/><br/>
+      <sub><b>Hierarchical + Moon</b> — chaotic tidal forcing</sub>
+    </td>
+  </tr>
+</table>
+
+> Full-resolution MP4 demos:
+> [figure8.mp4](assets/figure8.mp4) ·
+> [lagrange.mp4](assets/lagrange.mp4) ·
+> [butterfly.mp4](assets/butterfly.mp4) ·
+> [hierarchical_moon.mp4](assets/hierarchical_moon.mp4)
+
+<!--
+  To embed videos that play inline on GitHub, drag-and-drop the .mp4 files
+  into a GitHub issue/PR comment, then paste the generated
+  https://github.com/user-attachments/assets/<id> URL here with an <video> tag:
+
+  <video src="https://github.com/user-attachments/assets/<id>" controls width="100%"></video>
+-->
+
 ## Features
 
 - **Classical RK4 integrator** with Plummer softening for stable close-encounter behavior

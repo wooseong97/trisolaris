@@ -8,34 +8,93 @@ A real-time, interactive simulator for the gravitational three-body problem, bui
 
 ## Showcase
 
+### Classical periodic orbits
+
 <table>
   <tr>
-    <td align="center">
-      <img src="assets/figure8.gif" width="100%" alt="Figure-8 choreography"/><br/>
-      <sub><b>Figure-8</b> — Chenciner–Montgomery</sub>
+    <td align="center" width="33%">
+      <img src="assets/figure8.gif" width="100%" alt="Figure-8"/><br/>
+      <sub><b>Figure-8</b><br/>Chenciner–Montgomery</sub>
     </td>
-    <td align="center">
+    <td align="center" width="33%">
       <img src="assets/lagrange.gif" width="100%" alt="Lagrange triangle"/><br/>
-      <sub><b>Lagrange Triangle</b> — equal-mass rotation</sub>
+      <sub><b>Lagrange Triangle</b><br/>equilateral rotation</sub>
     </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="assets/butterfly.gif" width="100%" alt="Butterfly I"/><br/>
-      <sub><b>Butterfly I</b> — Šuvakov–Dmitrašinović</sub>
-    </td>
-    <td align="center">
-      <img src="assets/hierarchical_moon.gif" width="100%" alt="Hierarchical triple with moon"/><br/>
-      <sub><b>Hierarchical + Moon</b> — chaotic tidal forcing</sub>
+    <td align="center" width="33%">
+      <img src="assets/euler_collinear.gif" width="100%" alt="Euler collinear"/><br/>
+      <sub><b>Euler Collinear</b><br/>three-in-a-line rotation</sub>
     </td>
   </tr>
 </table>
 
-> Full-resolution MP4 demos:
-> [figure8.mp4](assets/figure8.mp4) ·
-> [lagrange.mp4](assets/lagrange.mp4) ·
-> [butterfly.mp4](assets/butterfly.mp4) ·
-> [hierarchical_moon.mp4](assets/hierarchical_moon.mp4)
+### Šuvakov–Dmitrašinović family (2013+)
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="assets/butterfly.gif" width="100%" alt="Butterfly I"/><br/>
+      <sub><b>Butterfly I</b></sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="assets/yin_yang.gif" width="100%" alt="Yin-Yang I"/><br/>
+      <sub><b>Yin-Yang I</b></sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="assets/moth_i.gif" width="100%" alt="Moth I"/><br/>
+      <sub><b>Moth I</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%">
+      <img src="assets/moth_iii.gif" width="100%" alt="Moth III"/><br/>
+      <sub><b>Moth III</b></sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="assets/goggles.gif" width="100%" alt="Goggles"/><br/>
+      <sub><b>Goggles</b></sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="assets/bumblebee.gif" width="100%" alt="Bumblebee"/><br/>
+      <sub><b>Bumblebee</b></sub>
+    </td>
+  </tr>
+</table>
+
+### Chaos and scenarios
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="assets/pythagorean.gif" width="100%" alt="Pythagorean"/><br/>
+      <sub><b>Pythagorean (Burrau)</b><br/>3:4:5 free-fall, binary + ejection</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="assets/free_fall.gif" width="100%" alt="Free-fall periodic"/><br/>
+      <sub><b>Free-Fall Periodic</b><br/>Li–Liao 2019 family</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="assets/slingshot.gif" width="100%" alt="Slingshot"/><br/>
+      <sub><b>Slingshot</b><br/>gravity-assist escape</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%">
+      <img src="assets/trojan_l4.gif" width="100%" alt="Trojan L4"/><br/>
+      <sub><b>Trojan L4</b><br/>Lagrange-point co-orbit</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="assets/hierarchical_moon.gif" width="100%" alt="Hierarchical + Moon"/><br/>
+      <sub><b>Hierarchical + Moon</b><br/>chaotic tidal forcing</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="assets/figure8_planet.gif" width="100%" alt="Figure-8 + Planet"/><br/>
+      <sub><b>Figure-8 + Planet</b><br/>circumtriple companion</sub>
+    </td>
+  </tr>
+</table>
+
+> Full-resolution MP4 versions of every demo live alongside the GIFs in [`assets/`](assets/).
+> Regenerate all of them with `python scripts/record_demos.py`.
 
 <!--
   To embed videos that play inline on GitHub, drag-and-drop the .mp4 files
@@ -92,14 +151,25 @@ Pick a preset from the dropdown or choose **Custom** and fill in mass, position 
 
 ### Included presets
 
+Classical solutions
 - **Figure-8** — Chenciner–Montgomery choreography (equal masses chase along a lemniscate)
 - **Lagrange Triangle** — equal masses at the vertices of a rotating equilateral triangle
-- **Sun + 2 Planets** — a heavy central mass with two circular orbiters
-- **Hierarchical Triple** — a close binary orbited by a distant third body
-- **Butterfly I** — Šuvakov–Dmitrašinović (2013) new periodic solution
+- **Euler Collinear** — three equal masses rigidly rotating along a straight line
+
+Šuvakov–Dmitrašinović 2013 family (equal-mass planar periodic)
+- **Butterfly I**, **Yin-Yang I**, **Moth I**, **Moth III**, **Goggles**, **Bumblebee**
+
+Free-fall and chaos
+- **Free-Fall Periodic** — Li–Liao (2019) solution starting entirely from rest
+- **Pythagorean (Burrau)** — the 3:4:5 mass free-fall benchmark; ends in a binary + ejection
+
+Hierarchical and scenario setups
+- **Sun + 2 Planets**, **Hierarchical Triple**, **Hierarchical + Moon**
 - **Figure-8 + Planet** — a circumtriple test particle around the figure-eight system
-- **Hierarchical + Moon** — a test moon bound to the outer star of a hierarchical triple
-- **Random** — randomized masses and states for quick experimentation
+- **Trojan L4** — a test body co-orbiting at a Lagrange equilibrium point
+- **Slingshot** — a gravity-assist flyby past a planet orbiting a massive star
+
+- **Random** / **Custom** — randomized or hand-entered initial conditions
 
 ## Project structure
 
@@ -113,7 +183,10 @@ trisolaris/
 ├── ui_setup.py      # Initial-conditions UI
 ├── ui_controls.py   # In-simulation control bar
 ├── presets.py       # Famous three-body solutions
-└── requirements.txt
+├── requirements.txt
+├── assets/          # GIF + MP4 demo reels
+└── scripts/
+    └── record_demos.py  # Headless recorder (regenerates assets/)
 ```
 
 ## Physics notes

@@ -60,7 +60,7 @@ A real-time, interactive simulator for the gravitational three-body problem, bui
   </tr>
 </table>
 
-### Chaos and scenarios
+### Chaotic orbits and scenarios
 
 <table>
   <tr>
@@ -163,7 +163,7 @@ Free-fall and chaos
 - **Free-Fall Periodic** — Li–Liao (2019) solution starting entirely from rest
 - **Pythagorean (Burrau)** — the 3:4:5 mass free-fall benchmark; ends in a binary + ejection
 
-Hierarchical and scenario setups
+Hierarchical systems and scenarios
 - **Sun + 2 Planets**, **Hierarchical Triple**, **Hierarchical + Moon**
 - **Figure-8 + Planet** — a circumtriple test particle around the figure-eight system
 - **Trojan L4** — a test body co-orbiting at a Lagrange equilibrium point
